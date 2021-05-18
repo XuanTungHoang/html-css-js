@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+/* all */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* element html */
+html {
+    font-size: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.all-item {
+    width: 1200px;
+    height: 100%;
+    border: 5px solid green ;
+}
+
+/* class item */
+.item {
+    width: 150px;
+    height: 150px;
+    border: 2px solid red;
+    margin: 20px 5px 5px 5px;
+    padding-top: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+/* select all p inside div */
+div p {
+    color: green;
+}
+
+/* select all p have parent is div */
+div > p {
+    color: blue;
+}
+
+/* all h4 pre p */
+p ~ h4 {
+    color: coral;
+}
+/* select all p have class p1 */
+p.p1 {
+    color: red;
+}
+
+/* do something before h3 */
+h3::before {
+    content: 'before';
+    font-size: 10px;
+    color: red;
+    background: green;
+}
+/* do something after h3 */
+h3::after {
+    content: 'before';
+    font-size: 10px;
+    color: red;
+    background: green;
+}
+
+/* select all element that is not p */
+:not(p) {
+    color: greenyellow;
+}
+
+.lorem {
+    font-size: 30px;
+    color: black;
+}
+
+.box {
+    align-items: center;
+    width: 1200px;
+    height: 500px;
+    border: 5px solid greenyellow;
+    margin-top: 20px;
+    position: relative;
+}
+
+.box1 {
+    width: 300px;
+    height: 200px;
+    margin: 1rem;
+    border: 2px solid red;
+    font-size: 20px;
+    background: rgb(73, 68, 68);
+    position: absolute;
+    top: 0px;
+}
+
+
+.box2 {
+    width: 300px;
+    height: 200px;
+    font-size: 20px;
+    border: 2px solid green;
+    background: rgb(51, 51, 83); 
+    position: fixed;
+    right: 0%;
+}
+
+.box1 p {
+    margin: auto;
+    color: crimson;
+}
+
+.box2 p {
+    color: crimson;
+}
+
+nav {
+    width: 100%;
+    margin-bottom: 5px ;
+    background-color: #6f1a07;
+    position: fixed;
+    top: 0;
+}
+
+li {
+    line-height: 40px;
+    margin-left: 20px;
+    display: inline-flex;
+    font-size: 20px;
+    color: white;
+}
+
+.boxx {
+    color: black;
+    width: 30%;
+    height: 100px;
+    font-size: 30px;
+    margin-bottom: 5px ;
+}
+
+.boxx1 {
+    margin-top: 50px;
+    display: grid;
+    background: lightblue;
+}
+.boxx1 p {
+    margin: auto;
+}
+.boxx2 {
+    display: grid;
+    background: red;
+    place-items: center;
+}
+.boxx3 {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: purple;
+}
+.boxx4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: orange;
+}
+
